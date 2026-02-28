@@ -1,5 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
 .yoga-classes-section {
     padding: 64px 0;
+}
+
+.yoga-conatiner {
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
 .yoga-top-text {
@@ -32,9 +43,12 @@
     flex-direction: column;
     align-items: center;
     gap: 48px;
+    margin-bottom: 48px;
 }
 
 .yoga-item-title {
+    margin-top: 24px;
+    margin-bottom: 20px;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.4;
@@ -49,8 +63,14 @@
     text-align: center;
 }
 
+.yoga-img {
+    width: 100%;
+}
+
 .yoga-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #c2d9fc;
     border: 1px solid #c2d9fc;
     border-radius: 100px;
@@ -72,6 +92,12 @@
 
 
 @media screen and (min-width: 768px) {
+    .yoga-conatiner {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
     .yoga-classes-section {
         padding: 40px 0;
     }
@@ -90,7 +116,9 @@
     .yoga-list {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        align-items: baseline;
+        column-gap: 24px;
+        row-gap: 27px;
     }
     .yoga-item {
         flex-basis: calc((100% - 24px) / 2);
@@ -103,9 +131,23 @@
         width: 100%;
     }
 
-    .yoga-link {}
+    .yoga-item-title {
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
+    .yoga-link {
+        width: 110px;
+        margin: 0 auto;
+    }
 }
-@media screen and (min-width: 1136px) {
+@media screen and (min-width: 1336px) {
+    .yoga-conatiner {
+        max-width: 1336px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    
     .yoga-classes-section {
         padding: 112px 0;
     }
@@ -118,10 +160,12 @@
         font-size: 36px;
     }
 
-    .yoga-item {
-        flex-basis: calc((100% - 72px) / 3);
+    .yoga-item,
+    .yoga-item:last-child {
+        flex-basis: calc((100% - 48px) / 3);
     }
-    .yoga-item-img {
-        display: none;
+    .yoga-item-title {
+        margin-top: 32px;
+        margin-bottom: 24px;
     }
 }
