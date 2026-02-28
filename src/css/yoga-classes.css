@@ -87,7 +87,23 @@
         margin-bottom: 40px;
         font-size: 18px;
     }
+    .yoga-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .yoga-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
     
+    .yoga-item:last-child {
+        flex-basis: 100%;
+    }
+    .yoga-item-img {
+        width: 100%;
+    }
+
+    .yoga-link {}
 }
 @media screen and (min-width: 1136px) {
     .yoga-classes-section {
@@ -96,9 +112,16 @@
 
     .yoga-section-title {
         font-size: 52px;
-}
+    }
 
     .yoga-item-title {
         font-size: 36px;
-}
+    }
+
+    .yoga-item {
+        flex-basis: calc((100% - 72px) / 3);
+    }
+    .yoga-item-img {
+        display: none;
+    }
 }
