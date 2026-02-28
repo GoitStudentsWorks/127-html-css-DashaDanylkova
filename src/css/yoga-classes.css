@@ -5,6 +5,10 @@
 .yoga-classes-section {
     padding: 64px 0;
 }
+.yoga-text-wrappwer {
+    max-width: 343px;
+    margin-bottom: 48px;
+}
 
 .yoga-conatiner {
     min-width: 320px;
@@ -31,7 +35,6 @@
 }
 
 .yoga-bottom-text {
-    margin-bottom: 48px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -74,13 +77,10 @@
     background-color: #c2d9fc;
     border: 1px solid #c2d9fc;
     border-radius: 100px;
-    padding: 10px 24px;
-    width: 100%;
     height: 46px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    transition: background-color 250ms ease-in;
 }
 
 .yoga-link:hover,
@@ -101,6 +101,11 @@
     .yoga-classes-section {
         padding: 40px 0;
     }
+
+    .yoga-text-wrappwer {
+        max-width: 704px;
+        margin-bottom: 40px;
+    }
     .yoga-top-text {
         margin-bottom: 16px;
     }
@@ -110,7 +115,6 @@
     }
 
     .yoga-bottom-text {
-        margin-bottom: 40px;
         font-size: 18px;
     }
     .yoga-list {
@@ -150,6 +154,12 @@
     
     .yoga-classes-section {
         padding: 112px 0;
+    }
+
+    .yoga-text-wrappwer {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .yoga-section-title {
