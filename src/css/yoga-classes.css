@@ -1,0 +1,91 @@
+.yoga-classes-section {
+    padding: 64px 0;
+}
+
+.yoga-top-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.yoga-section-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.yoga-bottom-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.yoga-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.yoga-item-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.yoga-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.yoga-link {
+    background-color: #c2d9fc;
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 343px;
+    height: 46px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: background-color 250ms ease-in;
+}
+
+.yoga-link:hover,
+.yoga-link:focus {
+    background-color: #c2d9fc;
+    opacity: 0.5;
+}
+
+
+
+@media screen and (min-width: 768px) {
+.yoga-classes-section {
+    padding: 40px 0;
+    }
+
+    .yoga-bottom-text {
+    font-size: 18px;
+    }
+}
+@media screen and (min-width: 1136px) {
+.yoga-classes-section {
+    padding: 112px 0;
+    }
+
+    .yoga-section-title {
+    font-size: 52px;
+}
+
+.yoga-item-title {
+    font-size: 36px;
+}
+}
