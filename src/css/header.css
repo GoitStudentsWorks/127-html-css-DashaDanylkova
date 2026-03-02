@@ -1,18 +1,17 @@
  .header-container {
     display: flex;
      /* в одну лінію навігація + контакти */
-    flex-direction: row;
+     /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    background-color: #f2fafa;
 }
-
 
 .burger-btn {
     background-color: transparent;
     border: none;
-    padding: 0;
+    width: 44px;
+    height: 44px;
 }
 
 .burger-icon {
@@ -24,19 +23,12 @@
     display: none;
 }
 
-.header-logo {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 0px;   
+.logo {
+    
+    margin: 14px auto;
+    align-items: center;
 }
 
-.box-join-btn {
-    padding: 15px 0;
-}
 
 .join-btn {
     white-space: nowrap;
@@ -47,7 +39,6 @@
     width: 102px;
     height: 34px;
     background-color: #c2d9fc;
-    margin-left: 11.5px;
 
     font-family: "Sarabun", sans-serif;
     font-weight: 500;
@@ -55,39 +46,28 @@
     
     line-height: 26px;
     color: #0d0b0a;
+    margin: 15px 0;
 }  
 
 
 @media screen and (min-width: 768px) {
 
     .header-container {
-        width: 704px;
+        max-width: 768px;
         padding-left: 32px;
         padding-right: 32px;
-        gap: 32px;
-    }
-
-    .box-button {
-        width: 278px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: row;
     }
 
     .burger-btn {
+        width: 278px;
         align-items: flex-start;
-        
+        margin: 24px auto;
     }
 
-    .header-logo {
-        padding: 18px 0;
+    .logo {
+        margin: 18px auto;
     }
     
-    .box-join-btn {
-        align-items: flex-end;
-    }
-
     .join-btn {
         margin-left: 175px;
     } 
@@ -99,9 +79,8 @@
 @media screen and (min-width: 1336px) {
 
     .header-container {
-        
-        width: 1312px;
-        gap: 32px;
+        max-width: 1336px;
+        /* gap: 32px; */
         padding-left: 64px;
         padding-right: 64px; 
     }
@@ -111,23 +90,24 @@
     }
 
     .header-nav {
-        display: block;
+        /* display: block; */
         align-items: center;     
     }
 
     .nav-list {
-        /* flex-direction: row;
-        display: flex;
-        gap: 32px; */
-        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
         gap: 32px;
-        list-style: none;
+        display: flex;
+        list-style: none; 
     }
 
     .nav-link {
-        display: block;
-        position: relative;
+        /* display: block;
+        position: relative; */
         font-size: 16px;
+        line-height: 26px;
         font-weight: 400;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -148,5 +128,11 @@
         border-radius: 2px;
     }
 
-       
+    .logo {
+        margin: 18px auto;
+    }
+
+    .join-btn {
+        margin-left: 435px;
+    }
 }
