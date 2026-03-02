@@ -1,0 +1,265 @@
+/*---------------------pricing-------------------------*/
+.pricing {
+  padding: 64px 0;
+}
+.pricing-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 343px;
+  margin-bottom: 48px;
+}
+
+.title-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.pricing-title-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.pricing-item-icon {
+  fill: #0d0b0a;
+}
+
+.title-pricing-plans {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.pricing-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.pricing-cards-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0px solid rgba(13, 11, 10, 0.15);
+  border-radius: 16px;
+  padding: 32px 24px;
+  width: 343px;
+  background-color: #dfebeb;
+}
+
+.pricing-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-card-text {
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  margin-bottom: 8px;
+}
+.pricing-card-price {
+  font-size: 44px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  margin-bottom: 24px;
+}
+.pricing-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+  align-self: flex-start;
+  padding: 8px 0;
+  width: 295px;
+}
+.pricing-card-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.pricing-item-icon {
+  fill: #0d0b0a;
+}
+.pricing-item-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.pricing-card-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  padding: 10px 24px;
+  width: 295px;
+  height: 46px;
+  background-color: #c2d9fc;
+}
+.pricing-card-btn:hover {
+  opacity: 0.5;
+}
+.pricing-card-btn:focus {
+  opacity: 0.5;
+}
+.wide-card-btn {
+  display: none;
+}
+/*---------------------pricing 768px------------------------------------*/
+
+@media screen and (min-width: 768px) {
+  .pricing {
+    padding: 40px 0;
+  }
+  .pricing-title {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .title-text {
+    margin-bottom: 16px;
+  }
+  .pricing-title-wrap {
+    gap: 24px;
+  }
+  .pricing-text {
+    font-size: 18px;
+  }
+  .pricing-cards-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  .pricing-card {
+    width: 340px;
+    padding: 16px;
+  }
+  .wide-card {
+    width: 704px;
+    height: 383px;
+  }
+  .wide-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+  .pricing-card-left {
+    gap: 24px;
+  }
+  .pricing-card-text {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  .pricing-card-price {
+    font-size: 72px;
+    margin-bottom: 32px;
+  }
+  .wide-card .pricing-card-text {
+    margin: 0;
+  }
+  .wide-card .pricing-card-price {
+    margin: 0;
+  }
+  .pricing-card-list {
+    margin-bottom: 22px;
+    width: 308px;
+  }
+  .wide-card .pricing-card-list {
+    margin: 0;
+    align-self: center;
+    width: 320px;
+  }
+  .pricing-card-btn {
+    width: 308px;
+    height: 46px;
+    display: inline-block;
+  }
+  .wide-card-btn {
+    width: 320px;
+    height: 46px;
+    display: inline-block;
+  }
+  .btn-mob {
+    display: none;
+  }
+}
+/*---------------------------pricing 1336px-----------------------*/
+@media screen and (min-width: 1336px) {
+  .pricing {
+    padding: 112px 0;
+  }
+  .pricing-title {
+    margin-bottom: 40px;
+  }
+  .title-pricing-plans {
+    font-size: 52px;
+  }
+  .pricing-cards-wrap {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing-card-btn {
+    width: 357px;
+    height: 46px;
+  }
+  .btn-mob {
+    display: inline-block;
+    width: 357px;
+    height: 46px;
+  }
+  .pricing-card-text {
+    margin-bottom: 8px;
+  }
+  .pricing-card {
+    border-radius: 16px;
+    padding: 32px;
+    width: 421px;
+    height: 509px;
+  }
+  .pricing-card-price {
+    margin-bottom: 32px;
+  }
+  .pricing-card-list {
+    margin-bottom: 116px;
+    width: 357px;
+    height: 210px;
+  }
+  .wide-card .pricing-card-list {
+    margin-bottom: 32px;
+    align-self: flex-start;
+    width: 357px;
+  }
+  .wide-card .pricing-card-text {
+    margin-bottom: 8px;
+  }
+  .wide-card .pricing-card-price {
+    margin-bottom: 32px;
+  }
+  .wide-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0;
+  }
+  .pricing-card-left {
+    gap: 0;
+    margin: 0 auto;
+  }
+  .wide-card-btn {
+    display: none;
+  }
+}
