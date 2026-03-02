@@ -1,20 +1,15 @@
-
-
 .yoga-classes-section {
     padding: 64px 0;
 }
 .yoga-text-wrappwer {
-    max-width: 343px;
     margin-bottom: 48px;
 }
-
 .yoga-conatiner {
     min-width: 320px;
     max-width: 375px;
     margin: 0 auto;
     padding: 0 16px;
 }
-
 .yoga-top-text {
     margin-bottom: 12px;
     font-weight: 600;
@@ -22,8 +17,8 @@
     line-height: 1.5;
     text-align: center;
 }
-
 .yoga-section-title {
+    font-family: "Cabin", sans-serif;
     margin-bottom: 20px;
     font-weight: 400;
     font-size: 40px;
@@ -31,14 +26,12 @@
     letter-spacing: 0.01em;
     text-align: center;
 }
-
 .yoga-bottom-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
 }
-
 .yoga-list {
     display: flex;
     flex-direction: column;
@@ -46,28 +39,22 @@
     gap: 48px;
     margin-bottom: 48px;
 }
-
 .yoga-item-title {
     margin-top: 24px;
     margin-bottom: 20px;
+    font-family: "Cabin", sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.4;
     letter-spacing: 0.01em;
     text-align: center;
 }
-
 .yoga-item-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
 }
-
-.yoga-img {
-    width: 100%;
-}
-
 .yoga-link {
     display: flex;
     align-items: center;
@@ -101,7 +88,6 @@
     }
 
     .yoga-text-wrappwer {
-        max-width: 704px;
         margin-bottom: 40px;
     }
     .yoga-top-text {
@@ -121,6 +107,7 @@
         align-items: baseline;
         column-gap: 24px;
         row-gap: 27px;
+        margin-bottom: 40px;
     }
     .yoga-item {
         flex-basis: calc((100% - 24px) / 2);
@@ -175,5 +162,8 @@
     .yoga-item-title {
         margin-top: 32px;
         margin-bottom: 24px;
+    }
+    .yoga-img {
+        width: 100%;
     }
 }
