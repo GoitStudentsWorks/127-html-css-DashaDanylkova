@@ -1,5 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .container {
-  max-width: 375px;
   width: 100%;
   padding: 0 16px;
   margin: 0 auto;
@@ -71,9 +76,14 @@
   border: 1px solid #868584;
 }
 
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
-    width: 704px;
+    max-width: 704px;
   }
 
   .about {
@@ -91,9 +101,10 @@
   .about__list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
-  }
 
+    gap: 24px;
+    margin-bottom: 40px;
+  }
   .about__item {
     width: calc((100% - 24px) / 2);
   }
@@ -104,7 +115,7 @@
 }
 @media screen and (min-width: 1336px) {
   .container {
-    width: 1312px;
+    max-width: 1312px;
   }
 
   .about {
@@ -116,9 +127,7 @@
   }
 
   .about__list {
-    flex-wrap: nowrap;
   }
-
   .about__item {
     width: calc((100% - 72px) / 4);
   }
