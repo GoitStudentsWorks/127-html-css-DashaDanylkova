@@ -92,6 +92,19 @@ color: #0d0b0a;
 margin: 0 0 32px;
 }
 
+@media (max-width: 375px) {
+.testimonial-card {
+  width: 100%;
+}
+
+.testimonial-text {
+  font-size: 22px;
+}
+
+
+
+}
+
 @media (min-width: 768px) {
   .testimonials-list {
     display: grid;
