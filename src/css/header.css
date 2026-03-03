@@ -23,7 +23,6 @@
 
 .logo {
     align-items: center;
-    
 }
 
 .join-btn {
@@ -43,9 +42,15 @@
     line-height: 26px;
     color: #0d0b0a;
     margin: 15px 0;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }  
 
+.join-btn:hover,
+.join-btn:focus,
+.join-btn:active {
+    opacity: 0.3;
+    background-color: #c2d9fc;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -70,6 +75,14 @@
         width: 105px;
         height: 42px;
         margin-left: 173px;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .join-btn:hover,
+    .join-btn:focus,
+    .join-btn:active {
+        opacity: 0.3;
+        background-color: #c2d9fc;
     }
 }
 
@@ -132,12 +145,14 @@
 
     .join-btn {
         margin-left: 477px;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .join-btn:hover,
-    .join-btn:focus {
-        opacity: 0.5;
-        background-color: #c2d9fc;;
+    .join-btn:focus,
+    .join-btn:active {
+        opacity: 0.3;
+        background-color: #c2d9fc;
     }
 }
 
@@ -197,12 +212,13 @@
     width: 105px;
     height: 34px;
     background-color: #c2d9fc;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 .mobile-join:hover,
-.mobile-join:focus {
-    opacity: 0.5;
+.mobile-join:focus,
+.mobile-join:active {
+    opacity: 0.3;
     background-color: #c2d9fc;
 }
 
@@ -236,12 +252,13 @@
     background: #c2d9fc;
 
     margin-top: 276px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-btn:hover,
-.mobile-btn:focus {
-    opacity: 0.5;
+.mobile-btn:focus,
+.mobile-btn:active {
+    opacity: 0.3;
     background-color: #c2d9fc;
 }
 
