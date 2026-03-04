@@ -1,3 +1,7 @@
+.about {
+  background-color: #dfebeb;
+}
+
 .container {
   width: 100%;
   padding: 0 16px;
@@ -80,11 +84,17 @@
 }
 
 @media screen and (min-width: 375px) {
+  .about {
+    background-color: #dfebeb;
+  }
   .container {
     max-width: 375px;
   }
 }
 @media screen and (min-width: 768px) {
+  .about {
+    background-color: #f2fafa;
+  }
   .container {
     max-width: 704px;
   }
@@ -115,6 +125,7 @@
     width: calc((100% - 24px) / 2);
   }
   .about__item h3 {
+    white-space: nowrap;
     margin-bottom: 0;
   }
 
@@ -146,5 +157,6 @@
     max-width: 310px;
     margin-bottom: 24px;
     text-align: center;
+    white-space: normal;
   }
 }
