@@ -66,6 +66,16 @@
         height: 24px;
     }
 
+    .logo {
+        display: flex;
+    }  
+
+    .header-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .join-btn {
         padding-block: 8px;
         width: 105px;
@@ -151,6 +161,7 @@
 }
 
 .mobile-menu {
+    overflow-x: hidden;
     position: fixed;
     top: 0;
     left: 0;
@@ -172,6 +183,8 @@
         opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .header-mobile {
     display: flex;
@@ -249,7 +262,7 @@
     border-radius: 100px;
     padding-block: 10px;
     padding-inline: 24px;
-    width: 343px;
+    max-width: 343px;
     height: 46px;
     background: #c2d9fc;
 
@@ -277,6 +290,7 @@
         width: 204px;
         height: 46px;
     }
+
 }
 
 @media screen and (min-width: 1336px) {
