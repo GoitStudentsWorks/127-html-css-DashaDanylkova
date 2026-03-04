@@ -1,14 +1,18 @@
-.about {
-  background-color: #dfebeb;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .container {
+  max-width: 375px;
   width: 100%;
   padding: 0 16px;
   margin: 0 auto;
 }
 
 .about {
+  background: #dfebeb;
   padding: 48px 0;
 }
 .about__title {
@@ -83,24 +87,14 @@
   border: 1px solid #868584;
 }
 
-@media screen and (min-width: 375px) {
-  .about {
-    background-color: #dfebeb;
-  }
-  .container {
-    max-width: 375px;
-  }
-}
 @media screen and (min-width: 768px) {
-  .about {
-    background-color: #f2fafa;
-  }
   .container {
-    max-width: 704px;
+    max-width: 768px;
   }
 
   .about {
     padding: 64px 0;
+    background-color: #f2fafa;
   }
 
   .about__title {
@@ -135,7 +129,7 @@
 }
 @media screen and (min-width: 1336px) {
   .container {
-    max-width: 1312px;
+    max-width: 1336px;
   }
 
   .about {
