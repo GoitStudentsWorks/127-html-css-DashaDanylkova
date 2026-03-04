@@ -1,6 +1,6 @@
 .footer {
 background: #dfebeb;
-padding: 64px;
+padding: 48px 16px;
 }
 
 
@@ -18,8 +18,6 @@ border-radius: 16px;
   border-radius: 32px;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-
 }
 
 .footer-left {
@@ -53,7 +51,6 @@ border-radius: 16px;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.6;
-color: #0d0b0a;
 margin-bottom: 24px;
 
 }
@@ -121,7 +118,6 @@ color: #0d0b0a;
 }
 
 .footer-copy {
-  color: #0d0b0a;
   font-weight: 400;
 font-size: 14px;
 line-height: 1.6;
@@ -134,7 +130,7 @@ text-align: left;
   display: flex;
   flex-direction: column;
   font-size: 14px;
-  color: #0d0b0a;
+
   text-decoration: none;
   line-height: 1.7;
 }
@@ -164,10 +160,7 @@ text-align: left;
   color: #333;
 }
 
-@media (max-width: 375px) {
-.footer {
-  padding: 48px 16px;
-}
+
 
 .footer-container {
   width: 100%;
@@ -199,7 +192,7 @@ text-align: left;
       margin-bottom: 8px;
   }
 
-  }
+  
 
 @media (min-width: 767px) {
 .footer {
