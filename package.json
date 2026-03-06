@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/stack-overlords/",
+    "build": "vite build --base=/127-html-css-DashaDanylkova/",
     "preview": "vite preview"
   },
   "devDependencies": {
